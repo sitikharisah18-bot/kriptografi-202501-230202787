@@ -1,8 +1,8 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 1
-Topik: sejarah Kriptografi
+Topik: Sejarah Kriptografi
 Nama: Siti Kharisah
-NIM: 230202787  
+NIM: 230202787 
 Kelas: 5IKRA
 
 ## Laporan Minggu 1
@@ -19,6 +19,7 @@ Prinsip Confidentiality, Integrity, dan Availability (CIA) merupakan tiga pilar 
 ## Langkah 3 - Dokumentasi
 Bukti Setup repository GitHub :
 ![Setup GitHub](Screenshots/repo_setup.png)
+![Hasil Eksekusi](Screenshots/Eksekusi1.png)
 
 ## Quis Singkat
 1. Siapa tokoh yang di anggap sebagai bapak kriptografi moderen ? Claude Shannon
