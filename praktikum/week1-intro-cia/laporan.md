@@ -18,7 +18,7 @@ Prinsip Confidentiality, Integrity, dan Availability (CIA) merupakan tiga pilar 
 
 ## Langkah 3 - Dokumentasi
 Bukti Setup repository GitHub :
-![Setup GitHub](screenshots/repo_setup.png)
+![Setup GitHub](Screenshots/repo_setup.png)
 
 ## Quis Singkat
 1. Siapa tokoh yang di anggap sebagai bapak kriptografi moderen ? Claude Shannon
