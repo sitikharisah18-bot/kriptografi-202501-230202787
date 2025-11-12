@@ -10,9 +10,9 @@ Kelas: [5IKRA]
 ## 1. Tujuan
 Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 
-Menyelesaikan operasi aritmetika modular.
-Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
-Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
+1. Menyelesaikan operasi aritmetika modular.
+2. Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
+3. Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
 
 ---
 
