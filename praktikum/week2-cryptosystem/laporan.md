@@ -97,7 +97,7 @@ Hasil eksekusi program Caesar Cipher:
   - Ciphertext (pesan yang sudah disandikan),
   - Algoritma enkripsi dan dekripsi, serta
   - Kunci (key) yang digunakan untuk proses enkripsi dan dekripsi. 
-2 tidak membutuhkan banyak sumber daya. Namun, kelemahannya terletak pada keamanan distribusi kunci—karena pengirim dan penerima harus memiliki kunci yang sama, yang berisiko bocor saat dikirimkan.
+2 Tidak membutuhkan banyak sumber daya. Namun, kelemahannya terletak pada keamanan distribusi kunci—karena pengirim dan penerima harus memiliki kunci yang sama, yang berisiko bocor saat dikirimkan.
 3. Distribusi kunci menjadi masalah utama dalam kriptografi simetris karena kunci yang sama harus dibagikan ke pihak lain secara aman. Jika kunci tersebut disadap atau diketahui pihak ketiga, maka seluruh komunikasi bisa dibuka dan keamanan data menjadi tidak terjamin.
 )
 ---
