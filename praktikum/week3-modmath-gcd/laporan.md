@@ -126,7 +126,7 @@ Selain itu, metode yang lebih canggih seperti Baby-step Giant-step, Pollard’s 
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+(Berdasarkan percobaan Modular Math, dapat disimpulkan bahwa konsep aritmetika modular, GCD, bilangan prima, dan logaritma diskrit berperan penting dalam membangun dasar sistem kriptografi modern. Percobaan ini menunjukkan bagaimana operasi matematika sederhana seperti modulo dan GCD dapat digunakan untuk menghasilkan kunci dan menjaga keamanan data. Dengan memahami konsep-konsep ini, proses enkripsi dan dekripsi dapat dilakukan dengan lebih aman dan efisien.)
 
 ---
 
