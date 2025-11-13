@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 3
-Topik: [Modular Math (Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit)]  
+Topik: [Modular Math Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit]  
 Nama: [Siti Kharisah]  
 NIM: [230202787]  
 Kelas: [5IKRA]  
