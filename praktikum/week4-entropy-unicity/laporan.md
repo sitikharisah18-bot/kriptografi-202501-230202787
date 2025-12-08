@@ -93,17 +93,14 @@ print("Waktu brute force AES-128 =", brute_force_time(2**128), "hari")
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+ 
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
+![Hasil Eksekusi](Screenshots/Eksekusi4.png)
 ![Hasil Input](screenshots/input.png)
 ![Hasil Output](screenshots/output.png)
-)
+
 
 ---
 
