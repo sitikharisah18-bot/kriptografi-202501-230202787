@@ -161,7 +161,7 @@ print("Decrypted :", dec)
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
+![Hasil Eksekusi](Screenshots/Eksekusi.png)
 ![Hasil Input](screenshots/input.png)
 ![Hasil Output](screenshots/output.png)
 )
