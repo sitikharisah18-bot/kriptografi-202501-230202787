@@ -1,20 +1,27 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 6  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Topik: Cipher Modern (DES, AES, RSA)
+Nama:  Siti Kharisah
+NIM: 230202787 
+Kelas: 5IKRA  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:  
+1. Mengimplementasikan algoritma **DES** untuk blok data sederhana.  
+2. Menerapkan algoritma **AES** dengan panjang kunci 128 bit.  
+3. Menjelaskan proses pembangkitan kunci publik dan privat pada algoritma **RSA**.  
+
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Cipher modern adalah algoritma kriptografi yang dirancang dengan dasar matematika dan komputasi yang kuat untuk mengamankan data digital. DES (Data Encryption Standard) dan AES (Advanced Encryption Standard) termasuk ke dalam cipher simetris, yaitu menggunakan satu kunci yang sama untuk proses enkripsi dan dekripsi. DES bekerja pada blok 64-bit dengan panjang kunci efektif 56-bit, namun kini dianggap tidak aman karena ukuran kuncinya terlalu kecil. Sebagai penggantinya, AES dikembangkan dengan tingkat keamanan lebih tinggi, mendukung panjang kunci 128, 192, dan 256-bit, serta efisien untuk implementasi perangkat lunak maupun perangkat keras.
+
+Sementara itu, RSA merupakan cipher asimetris yang menggunakan sepasang kunci, yaitu kunci publik dan kunci privat. Keamanan RSA bergantung pada kesulitan faktorisasi bilangan prima besar, sehingga sangat cocok digunakan untuk pertukaran kunci dan tanda tangan digital. Berbeda dengan AES yang cepat untuk enkripsi data dalam jumlah besar, RSA relatif lebih lambat dan biasanya digunakan bersama algoritma simetris dalam sistem keamanan modern.
+
+Secara umum, cipher modern dirancang untuk mengatasi kelemahan cipher klasik dengan menyediakan tingkat keamanan yang lebih tinggi terhadap serangan kriptanalisis. Kombinasi penggunaan algoritma simetris seperti AES dan algoritma asimetris seperti RSA menjadi standar dalam berbagai aplikasi keamanan, seperti SSL/TLS, perbankan digital, dan sistem komunikasi aman.
 
 ---
 
@@ -64,15 +71,13 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. DES dan AES menggunakan kunci simetris (satu kunci yang sama), sedangkan RSA menggunakan kunci asimetris (kunci publik dan privat); dari sisi keamanan, DES lemah karena kuncinya pendek, AES sangat kuat, dan RSA aman bergantung pada kesulitan faktorisasi bilangan besar.
+2. AES lebih banyak digunakan karena memiliki keamanan lebih tinggi, ukuran kunci lebih panjang, dan lebih efisien dibanding DES.
+3. RSA bersifat asimetris karena menggunakan dua kunci berbeda; kunci dibangkitkan dari dua bilangan prima besar yang menghasilkan kunci publik dan kunci privat yang saling terkait secara matematis.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
+Berdasarkan percobaan, cipher modern terbukti memiliki tingkat keamanan yang jauh lebih tinggi dibandingkan cipher klasik karena didukung oleh kunci yang lebih kuat dan struktur algoritma yang kompleks. AES menunjukkan efisiensi dan keamanan terbaik untuk enkripsi data, sementara RSA efektif digunakan untuk pertukaran kunci secara aman. Kombinasi keduanya sangat penting dalam sistem keamanan modern.
 ---
 
 ## 9. Daftar Pustaka
