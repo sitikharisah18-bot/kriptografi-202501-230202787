@@ -1,20 +1,26 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 10
+Topik: [Public Key Infrastructure (PKI & Certificate Authority)]  
+Nama: [Siti Kharisah]  
+NIM: [230202787]  
+Kelas: [5IKRA]  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Membuat sertifikat digital sederhana.  
+2. Menjelaskan peran Certificate Authority (CA) dalam sistem PKI.  
+3. Mengevaluasi fungsi PKI dalam komunikasi aman (contoh: HTTPS, TLS). 
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+ Public Key Infrastructure (PKI) adalah kerangka kerja keamanan yang digunakan untuk mengelola kunci publik dan privat dalam komunikasi digital. PKI memastikan tiga aspek utama keamanan, yaitu autentikasi, kerahasiaan, dan integritas data, dengan memanfaatkan kriptografi kunci publik. Dalam PKI, setiap entitas memiliki pasangan kunci (public key dan private key), di mana kunci publik dapat dibagikan secara terbuka sedangkan kunci privat dijaga kerahasiaannya.
+
+Certificate Authority (CA) berperan sebagai pihak tepercaya yang menerbitkan dan memverifikasi sertifikat digital. Sertifikat digital berisi identitas pemilik, kunci publik, serta tanda tangan digital CA yang menjamin keaslian sertifikat tersebut. Dengan adanya CA, pengguna dapat mempercayai bahwa kunci publik benar-benar milik entitas yang sah, sehingga mencegah serangan seperti man-in-the-middle.
+
+PKI juga mencakup mekanisme pengelolaan sertifikat seperti penerbitan, distribusi, pembaruan, dan pencabutan sertifikat (melalui CRL atau OCSP). Infrastruktur ini banyak digunakan dalam berbagai layanan keamanan, seperti HTTPS pada web, tanda tangan digital, email aman, dan sistem autentikasi jaringan, sehingga menjadi fondasi penting dalam keamanan informasi modern.
+
 
 ---
 
@@ -64,14 +70,13 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Fungsi utama CA adalah memverifikasi identitas entitas dan menerbitkan sertifikat digital yang menjamin keaslian kunci publik.
+2. Self-signed certificate tidak tepercaya karena tidak diverifikasi pihak ketiga, sehingga mudah dipalsukan.
+3. PKI mencegah MITM dengan validasi sertifikat server oleh CA tepercaya dan verifikasi tanda tangan digital saat TLS/HTTPS.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan percobaan, PKI terbukti efektif dalam menjamin autentikasi, kerahasiaan, dan integritas komunikasi melalui penggunaan sertifikat digital. Peran Certificate Authority sangat penting untuk membangun kepercayaan dan mencegah serangan man-in-the-middle. Tanpa validasi sertifikat yang benar, keamanan komunikasi TLS/HTTPS tidak dapat terjamin.
 
 ---
 
@@ -84,8 +89,7 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
+
 ```
 commit abc12345
 Author: Nama Mahasiswa <email>
