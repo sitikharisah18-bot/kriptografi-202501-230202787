@@ -91,12 +91,10 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+commit b5933700724798638a192d759cea38c02d08459f
+Author: sitikharisah18-bot <sitikharisah18@gmail.com>
+Date:   Thu Dec 18 09:43:36 2025 +0700
+
+    week7-cryptosystem: Diffie-Hellman Key Exchange
 ```
