@@ -1,20 +1,23 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 13  
+Topik: [TinyChain – Proof of Work (PoW)]  
+Nama: [Siti Kharisah]  
+NIM: [230202787]  
+Kelas: [5IKRA]  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Menjelaskan peran **hash function** dalam blockchain.  
+2. Melakukan simulasi sederhana **Proof of Work (PoW)**.  
+3. Menganalisis keamanan cryptocurrency berbasis kriptografi.
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+TinyChain dengan mekanisme Proof of Work (PoW) merupakan simulasi sederhana dari teknologi blockchain yang digunakan untuk memahami proses penambangan dan keamanan data. Dalam PoW, sebuah blok baru hanya dapat ditambahkan ke rantai jika penambang berhasil menemukan nilai nonce yang menghasilkan hash sesuai tingkat kesulitan tertentu. Proses ini membutuhkan komputasi yang tinggi sehingga mencegah manipulasi data secara mudah.
+PoW berfungsi sebagai mekanisme konsensus, yaitu cara jaringan menyepakati blok mana yang valid. Karena setiap perubahan data akan mengubah hash blok dan seluruh blok setelahnya, maka blockchain menjadi immutabel. Hal ini membuat penyerang harus mengulang proses PoW untuk seluruh blok, yang secara praktis sangat sulit dilakukan.
+Dalam TinyChain, PoW membantu menunjukkan bagaimana keamanan dan kepercayaan dapat dibangun tanpa pihak pusat. Meskipun sederhana dan kurang efisien dibanding sistem modern, TinyChain efektif sebagai media pembelajaran untuk memahami konsep dasar blockchain dan Proof of Work.
 
 ---
 
@@ -64,14 +67,13 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Fungsi hash penting karena menjaga integritas dan keutuhan data, serta menghubungkan blok agar sulit dimanipulasi.
+2. Proof of Work mencegah double spending dengan memastikan hanya satu blok valid yang disepakati jaringan melalui proses komputasi yang sulit.
+3. Kelemahan PoW adalah membutuhkan energi dan daya komputasi besar, sehingga kurang efisien dan berdampak pada konsumsi listrik.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kesimpulan dari percobaan TinyChain – Proof of Work (PoW) menunjukkan bahwa mekanisme PoW mampu menjaga integritas dan keamanan blockchain dengan mempersulit perubahan data pada blok. Proses pencarian nonce membuktikan bagaimana konsensus dicapai secara terdesentralisasi. Namun, percobaan ini juga memperlihatkan bahwa PoW membutuhkan komputasi dan energi yang cukup besar.
 
 ---
 
