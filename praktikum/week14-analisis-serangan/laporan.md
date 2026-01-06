@@ -1,21 +1,25 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 14  
+Topik: [Analisis Serangan Kriptografi]  
+Nama: [Siti Kharisah]  
+NIM: [230202787]  
+Kelas: [5IKRA]  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Mengidentifikasi jenis serangan pada sistem informasi nyata.  
+2. Mengevaluasi kelemahan algoritma kriptografi yang digunakan.  
+3. Memberikan rekomendasi algoritma kriptografi yang sesuai untuk perbaikan keamanan.  
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Analisis serangan kriptografi adalah studi tentang berbagai metode yang digunakan untuk melemahkan atau memecahkan sistem kriptografi tanpa mengetahui kunci rahasia secara langsung. Tujuannya adalah mengevaluasi tingkat keamanan suatu algoritma dan mengidentifikasi celah yang dapat dimanfaatkan penyerang. Serangan dapat menargetkan algoritma, protokol, maupun implementasinya.
 
+Beberapa jenis serangan kriptografi yang umum antara lain brute force, ciphertext-only attack, known-plaintext attack, dan chosen-plaintext attack. Selain itu, terdapat serangan modern seperti side-channel attack yang memanfaatkan informasi fisik (waktu eksekusi, konsumsi daya) dan man-in-the-middle attack yang menyerang proses pertukaran kunci.
+
+Analisis serangan kriptografi sangat penting dalam perancangan sistem keamanan agar algoritma dan protokol yang digunakan cukup kuat terhadap berbagai ancaman. Dengan memahami pola serangan, pengembang dapat memilih parameter yang aman dan menerapkan praktik keamanan yang tepat.
 ---
 
 ## 3. Alat dan Bahan
@@ -64,14 +68,13 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Sistem lama rentan karena menggunakan algoritma usang, panjang kunci pendek, dan kata sandi lemah tanpa proteksi tambahan.
+2. Kelemahan algoritma berasal dari desain matematisnya, sedangkan kelemahan implementasi berasal dari kesalahan penerapan meskipun algoritmanya aman.
+3. Organisasi dapat menjaga keamanan dengan menggunakan algoritma modern, memperbarui sistem secara berkala, dan melakukan audit serta pengujian keamanan rutin.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kesimpulan dari percobaan Analisis Serangan Kriptografi menunjukkan bahwa banyak celah keamanan muncul akibat penggunaan algoritma usang dan kesalahan implementasi. Percobaan ini menegaskan pentingnya pemilihan algoritma yang kuat serta konfigurasi yang benar. Dengan evaluasi dan pembaruan rutin, sistem kriptografi dapat tetap aman terhadap berbagai jenis serangan.
 
 ---
 
