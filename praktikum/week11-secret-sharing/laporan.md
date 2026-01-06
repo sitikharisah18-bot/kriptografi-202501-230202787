@@ -74,14 +74,16 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Keuntungan utama Shamir Secret Sharing adalah rahasia tidak tersimpan utuh pada satu pihak; sebagian share saja tidak dapat mengungkap kunci, sehingga lebih aman dibanding membagikan salinan kunci langsung.
+2. Threshold (k) menentukan jumlah minimum share yang harus digabungkan untuk merekonstruksi rahasia; jika kurang dari 
+𝑘
+k, rahasia tetap aman.
+3. Contoh skenario nyata: pengamanan kunci master perusahaan, di mana kunci hanya bisa diakses jika minimal beberapa manajer menyetujui bersama.  
+
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kesimpulan dari percobaan Shamir’s Secret Sharing menunjukkan bahwa sebuah rahasia dapat dibagi menjadi beberapa bagian dan hanya dapat direkonstruksi jika jumlah share memenuhi nilai threshold yang ditentukan. Percobaan ini membuktikan bahwa share individu tidak mengungkap informasi rahasia apa pun. Dengan demikian, Shamir’s Secret Sharing meningkatkan keamanan dan keandalan pengelolaan kunci kriptografi.
 
 ---
 

@@ -75,11 +75,7 @@ Diskusikan:
 ---
 
 ## Pertanyaan Diskusi
-1. Keuntungan utama Shamir Secret Sharing adalah rahasia tidak tersimpan utuh pada satu pihak; sebagian share saja tidak dapat mengungkap kunci, sehingga lebih aman dibanding membagikan salinan kunci langsung.
-2. Threshold (k) menentukan jumlah minimum share yang harus digabungkan untuk merekonstruksi rahasia; jika kurang dari 
-𝑘
-k, rahasia tetap aman.
-3. Contoh skenario nyata: pengamanan kunci master perusahaan, di mana kunci hanya bisa diakses jika minimal beberapa manajer menyetujui bersama.
+1. 
 
 ---
 
