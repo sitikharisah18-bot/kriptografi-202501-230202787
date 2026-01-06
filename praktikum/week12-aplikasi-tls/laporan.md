@@ -1,20 +1,22 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-:12  
+Topik: [Aplikasi TLS & E-commerce]  
+Nama: [Siti Kharisah]  
+NIM: [230202787]  
+Kelas: [5IKRA]  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+1. Menganalisis penggunaan kriptografi pada **email** dan **SSL/TLS**.  
+2. Menjelaskan enkripsi dalam transaksi **e-commerce**.  
+3. Mengevaluasi isu **etika & privasi** dalam penggunaan kriptografi di kehidupan sehari-hari.  
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+TLS (Transport Layer Security) adalah protokol keamanan yang digunakan untuk melindungi komunikasi data di jaringan, khususnya internet. TLS menyediakan kerahasiaan, integritas, dan otentikasi dengan menggunakan kombinasi kriptografi kunci publik dan kunci simetris. Dalam proses handshake, TLS memverifikasi identitas server menggunakan sertifikat digital dan membentuk kunci sesi yang aman untuk komunikasi selanjutnya.
+Dalam konteks e-commerce, TLS sangat penting untuk melindungi data sensitif seperti informasi login, nomor kartu kredit, dan data transaksi. Dengan TLS (ditandai HTTPS), pengguna dapat yakin bahwa data yang dikirim tidak disadap atau dimodifikasi oleh pihak tidak berwenang. Selain itu, TLS membantu membangun kepercayaan pelanggan terhadap keamanan platform e-commerce.
+Penerapan TLS didukung oleh Certificate Authority (CA) yang menjamin keaslian identitas server e-commerce. Tanpa TLS, transaksi online rentan terhadap serangan seperti man-in-the-middle. Oleh karena itu, TLS menjadi fondasi utama keamanan dan keandalan sistem e-commerce modern.
 
 ---
 
@@ -64,14 +66,13 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. HTTP tidak terenkripsi sehingga data mudah disadap, sedangkan HTTPS menggunakan TLS untuk mengenkripsi dan mengamankan komunikasi.
+2. Sertifikat digital penting untuk memverifikasi identitas server dan mencegah serangan man-in-the-middle dalam komunikasi TLS.
+3. Kriptografi melindungi privasi data dari akses tidak sah, tetapi dapat menyulitkan penegakan hukum dan menimbulkan dilema etika terkait akses terhadap data terenkripsi.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kesimpulan dari percobaan Aplikasi TLS & E-commerce menunjukkan bahwa penggunaan TLS mampu mengamankan komunikasi dengan menyediakan kerahasiaan, integritas, dan otentikasi data. TLS melindungi informasi sensitif transaksi e-commerce dari penyadapan dan manipulasi. Dengan demikian, TLS meningkatkan kepercayaan dan keamanan dalam transaksi online.
 
 ---
 
