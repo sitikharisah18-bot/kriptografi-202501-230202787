@@ -16,8 +16,9 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Digital Signature adalah mekanisme kriptografi yang digunakan untuk menjamin keaslian, integritas, dan non-repudiation suatu pesan atau dokumen digital. Prosesnya melibatkan pembuatan nilai hash dari pesan, kemudian hash tersebut dienkripsi menggunakan kunci privat pengirim. Penerima memverifikasi tanda tangan dengan kunci publik untuk memastikan pesan tidak berubah dan benar berasal dari pengirim yang sah.
+Pada RSA, algoritma yang sama dapat digunakan baik untuk enkripsi maupun tanda tangan digital, sedangkan pada DSA (Digital Signature Algorithm) algoritma dirancang khusus hanya untuk proses tanda tangan. DSA lebih fokus pada efisiensi penandatanganan, sementara RSA lebih fleksibel dan banyak digunakan dalam sistem keamanan modern.
+Digital Signature banyak diterapkan pada sistem keamanan seperti HTTPS, e-mail, dan dokumen elektronik, serta didukung oleh Certificate Authority (CA) yang menjamin keterkaitan antara identitas pengguna dan kunci publiknya. Dengan demikian, Digital Signature menjadi komponen penting dalam menjaga keamanan komunikasi digital.
 
 ---
 
@@ -95,15 +96,13 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1:  
-- Pertanyaan 2: 
-- Pertanyaan 3:
-)
+1. Enkripsi RSA digunakan untuk menjaga kerahasiaan pesan, sedangkan tanda tangan digital RSA digunakan untuk menjamin keaslian dan keutuhan pesan.
+2. Tanda tangan digital menjamin integritas karena perubahan pesan akan mengubah hash, dan menjamin otentikasi karena tanda tangan dibuat menggunakan kunci privat pengirim.
+3. Certificate Authority (CA) berperan sebagai pihak tepercaya yang memverifikasi identitas dan menerbitkan sertifikat digital agar kunci publik dapat dipercaya.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Digital Signature menggunakan algoritma RSA atau DSA untuk menjamin keaslian (authentication), keutuhan data (integrity), dan non-repudiation. Tanda tangan dibuat dengan kunci privat pengirim dan diverifikasi menggunakan kunci publik, sehingga penerima dapat memastikan bahwa pesan tidak diubah dan benar berasal dari pengirim yang sah. Sistem ini menjadi dasar keamanan pada berbagai aplikasi modern seperti HTTPS, e-mail, dan dokumen digital.
 
 ---
 
