@@ -1,20 +1,30 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 11  
+Topik: [Secret Sharing (Shamir’s Secret Sharing)]  
+Nama: [Siti Kharisah]  
+NIM: [230202787]  
+Kelas: [5IKRA]  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+1. Menjelaskan konsep **Shamir Secret Sharing** (SSS).  
+2. Melakukan simulasi pembagian rahasia ke beberapa pihak menggunakan skema SSS.  
+3. Menganalisis keamanan skema distribusi rahasia. 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Shamir’s Secret Sharing adalah skema kriptografi yang digunakan untuk membagi sebuah rahasia menjadi beberapa bagian (share) dan mendistribusikannya ke beberapa pihak. Rahasia tersebut hanya dapat direkonstruksi jika sejumlah minimal bagian tertentu (threshold) digabungkan, sedangkan sebagian kecil bagian tidak akan memberikan informasi apa pun tentang rahasia. Metode ini didasarkan pada konsep polinomial dalam matematika.
+
+Dalam skema ini, rahasia disimpan sebagai konstanta dalam sebuah polinomial berderajat 
+𝑘
+−
+1
+k−1. Setiap peserta menerima satu titik pada polinomial tersebut sebagai share. Untuk mendapatkan kembali rahasia, diperlukan minimal 
+𝑘
+k share agar polinomial dapat direkonstruksi menggunakan interpolasi Lagrange. Jika jumlah share kurang dari threshold, rahasia tetap aman.
+
+Shamir’s Secret Sharing banyak digunakan untuk pengamanan kunci kriptografi, sistem backup, dan manajemen akses bersama, karena meningkatkan keamanan dengan menghindari penyimpanan rahasia pada satu pihak saja. Skema ini sangat efektif dalam mencegah kehilangan atau penyalahgunaan rahasia secara tunggal.
 
 ---
 
