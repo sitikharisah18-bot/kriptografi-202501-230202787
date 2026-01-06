@@ -43,16 +43,68 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
+Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
 
+### Langkah 1 — Implementasi DES (Opsional, Simulasi)
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
+from Crypto.Cipher import DES
+from Crypto.Random import get_random_bytes
 
+key = get_random_bytes(8)  # kunci 64 bit (8 byte)
+cipher = DES.new(key, DES.MODE_ECB)
+
+plaintext = b"ABCDEFGH"
+ciphertext = cipher.encrypt(plaintext)
+print("Ciphertext:", ciphertext)
+
+decipher = DES.new(key, DES.MODE_ECB)
+decrypted = decipher.decrypt(ciphertext)
+print("Decrypted:", decrypted)
+```
+---
+
+### Langkah 2 — Implementasi AES-128
+```python
+from Crypto.Cipher import AES
+from Crypto.Random import get_random_bytes
+
+key = get_random_bytes(16)  # 128 bit key
+cipher = AES.new(key, AES.MODE_EAX)
+
+plaintext = b"Modern Cipher AES Example"
+ciphertext, tag = cipher.encrypt_and_digest(plaintext)
+
+print("Ciphertext:", ciphertext)
+
+# Dekripsi
+cipher_dec = AES.new(key, AES.MODE_EAX, nonce=cipher.nonce)
+decrypted = cipher_dec.decrypt(ciphertext)
+print("Decrypted:", decrypted.decode())
+```
+---
+
+### Langkah 3 — Implementasi RSA
+```python
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP
+
+# Generate key pair
+key = RSA.generate(2048)
+private_key = key
+public_key = key.publickey()
+
+# Enkripsi dengan public key
+cipher_rsa = PKCS1_OAEP.new(public_key)
+plaintext = b"RSA Example"
+ciphertext = cipher_rsa.encrypt(plaintext)
+print("Ciphertext:", ciphertext)
+
+# Dekripsi dengan private key
+decipher_rsa = PKCS1_OAEP.new(private_key)
+decrypted = decipher_rsa.decrypt(ciphertext)
+print("Decrypted:", decrypted.decode())
+```
 ---
 
 ## 6. Hasil dan Pembahasan
@@ -63,7 +115,7 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
+![Hasil Eksekusi](screenshots/Eksekusi.png)
 ![Hasil Input](screenshots/input.png)
 ![Hasil Output](screenshots/output.png)
 )
@@ -89,12 +141,12 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+commit d0dfc226c74de05c90c946fd8392fbc16690580d 
+Author: sitikharisah18-bot <sitikharisah18@gmail.com>
+Date:   Tue Jan 6 12:02:39 2026 +0700
+
+    week6-chiper-modern
+
 ```
