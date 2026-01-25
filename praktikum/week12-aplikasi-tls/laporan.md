@@ -29,8 +29,7 @@ Penerapan TLS didukung oleh Certificate Authority (CA) yang menjamin keaslian id
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
+(
 1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
 2. Menyalin kode program dari panduan praktikum.
 3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
@@ -90,17 +89,68 @@ my_chain.add_block(Block(2, "", "Transaksi B → C: 5 Coin"))
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+1. Analisis SSL/TLS pada Website E‑Commerce
+Observasi dilakukan menggunakan browser (Chrome) dengan memeriksa sertifikat digital pada dua website e‑commerce populer di Indonesia.
+
+a. Tokopedia (https://www.tokopedia.com)
+Issuer (CA): DigiCert Inc
+
+Masa Berlaku: ± 1 tahun
+
+Algoritma Kriptografi:
+
+Public Key: RSA / ECDSA
+Enkripsi Simetris: AES‑128 / AES‑256
+Hash: SHA‑256
+Status Keamanan: HTTPS aktif, koneksi terenkripsi dan tervalidasi
+
+b. Shopee (https://shopee.co.id)
+Issuer (CA): DigiCert Inc
+
+Masa Berlaku: ± 1 tahun
+
+Algoritma Kriptografi:
+
+Public Key: RSA / ECDSA
+Enkripsi Simetris: AES‑128 / AES‑256
+Hash: SHA‑256
+Status Keamanan: HTTPS aktif, koneksi aman
+
+Perbandingan HTTPS vs HTTP
+Aspek	HTTP	HTTPS
+Enkripsi	Tidak ada	Ada (TLS)
+Keamanan Data	Rentan disadap	Terlindungi
+Sertifikat Digital	Tidak ada	Ada (CA)
+Kepercayaan Pengguna	Rendah	Tinggi
+Website tanpa HTTPS sangat rentan terhadap penyadapan dan manipulasi data.
+
+2. Enkripsi dalam Transaksi E‑Commerce
+Pada proses login dan pembayaran di e‑commerce:
+
+Data username, password, dan OTP dienkripsi menggunakan TLS.
+Informasi pembayaran (nomor kartu, token pembayaran) diamankan dengan enkripsi simetris (AES).
+TLS mencegah serangan Man‑in‑the‑Middle (MITM) dengan verifikasi sertifikat.
+Ancaman jika TLS tidak digunakan:
+
+Pencurian akun
+Penyadapan data kartu kredit
+Manipulasi transaksi
+Phishing dan spoofing
+Analisis Etika & Privasi
+1. Isu Privasi pada Email Terenkripsi
+Teknologi seperti PGP dan S/MIME memungkinkan email dienkripsi end‑to‑end sehingga hanya pengirim dan penerima yang dapat membaca isi pesan. Hal ini melindungi privasi, tetapi juga menimbulkan tantangan bagi organisasi dan pemerintah.
+
+2. Dilema Etika
+Audit Email Karyawan Perusahaan memiliki kepentingan keamanan, namun membuka email terenkripsi karyawan tanpa izin melanggar privasi.
+
+Pengawasan Pemerintah Enkripsi melindungi warga, tetapi menyulitkan penegakan hukum dalam kasus kejahatan siber. Hal ini memunculkan dilema antara keamanan nasional dan hak privasi individu.
 
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](screenshots/output.png)
 ![Hasil Input](screenshots/input.png)
 ![Hasil Output](screenshots/output.png)
-)
+
 
 ---
 
@@ -124,12 +174,12 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+commit 1f9b36c9a3c7a18ec1a442be6925e4525e5b48a9
+Author: sitikharisah18-bot <sitikharisah18@gmail.com>
+Date:   Sun Jan 25 22:34:12 2026 +0700
+
+    week12-aplikasi-tls
+
 ```
