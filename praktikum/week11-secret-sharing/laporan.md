@@ -49,11 +49,18 @@ Contoh format:
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
+from secretsharing import SecretSharer
+
+# Rahasia yang ingin dibagi
+secret = "KriptografiUPB2025"
+
+# Bagi menjadi 5 shares, ambang batas 3 (minimal 3 shares untuk rekonstruksi)
+shares = SecretSharer.split_secret(secret, 3, 5)
+print("Shares:", shares)
+
+# Rekonstruksi rahasia dari 3 shares
+recovered = SecretSharer.recover_secret(shares[:3])
+print("Recovered secret:", recovered)
 )
 
 ---
@@ -96,12 +103,10 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit d69192ab254eb8342edfe977cf21506b53f2f914
+Author: sitikharisah18-bot <sitikharisah18@gmail.com>
+Date:   Tue Jan 6 13:33:52 2026 +0700
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week11-secret-sharing
+
 ```

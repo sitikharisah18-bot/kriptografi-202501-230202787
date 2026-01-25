@@ -75,7 +75,9 @@ Diskusikan:
 ---
 
 ## Pertanyaan Diskusi
-1. 
+1. Apa keuntungan utama Shamir Secret Sharing dibanding membagikan salinan kunci secara langsung?
+2. Apa peran threshold (k) dalam keamanan secret sharing?
+3. Berikan satu contoh skenario nyata di mana SSS sangat bermanfaat.
 
 ---
 
