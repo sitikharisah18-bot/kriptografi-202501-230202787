@@ -46,9 +46,7 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
+```python
 from secretsharing import SecretSharer
 
 # Rahasia yang ingin dibagi
@@ -61,9 +59,7 @@ print("Shares:", shares)
 # Rekonstruksi rahasia dari 3 shares
 recovered = SecretSharer.recover_secret(shares[:3])
 print("Recovered secret:", recovered)
-)
-
----
+```
 
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
